@@ -2,8 +2,8 @@
 
 import sys
 
-d = sys.argv
-date = int(d[1])
+d = sys.argv #imports date from the shell script argument without needing to import os
+date = int(d[1]) + 69  # nice 
 
 
 def readFile(fileName):
@@ -17,4 +17,4 @@ words = readFile("list.txt")
 k = len(words)
 n = date % k
 name = words[n]
-print(name)
+print(name) # returns filename to the shell script
